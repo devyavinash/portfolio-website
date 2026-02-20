@@ -4,12 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <style>
+        #container{
+            display: flex;
+            align-items: center;
+            max-width: 60%;
+            margin: auto;
+        }
+
+        #hero-image,#hero-content{
+            width: 50%;
+            flex: 1;
+        
+            
+        }
+        #hero-image{
+            max-width: 100%;
+            
+        }
+        #hero{
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        #hero-content{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 200px;
+          
+        }
+        .btn{
+            display: flex;
+            gap: 30px;
+        }
+        
+       
+    </style>
 </head>
 <body>
-    <section class="hero">
-        <h1>Hi, I'm Avinash</h1>
-        <p>Frontend Developer building clean and responsive websites.</p>
-        <button>View My Work</button>
-    </section>
+    <header></header>
+        <section id="hero">
+            <div id="container">
+                 <div id="hero-content">
+                    <h1>Hi, I am Avinash</h1>
+                    <p>I am a web developer| AI/ML freak | </p>
+                    <div class="btn">
+                        <button id="btn1">Skills</button>
+                        <button id="btn2">Project</button>
+                    </div>
+                 </div>
+                 <div id="hero-image">
+                    <img src="image.jpeg" alt="" style="height: 200px;">
+                 </div>
+            </div>
+        </section>
+    <footer></footer>
 </body>
 </html>
